@@ -1,0 +1,16 @@
+
+.contacts-item-container{
+    position: relative;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.circle{
+    font-size: 30px !important;
+    padding: 3px 15px !important;
+    border-radius: 50% !important;
+    position: absolute;
+    right: 15vh;
+    bottom: 10vh;
+}

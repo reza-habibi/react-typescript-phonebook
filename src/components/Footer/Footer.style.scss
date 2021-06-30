@@ -1,0 +1,14 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .footer-container{
+        background-color: #f3f3f3;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        .footer-items{
+
+        }
+    }
+}

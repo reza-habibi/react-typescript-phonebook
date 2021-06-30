@@ -1,0 +1,42 @@
+.contact-item {
+  height: auto;
+  padding: 5px;
+  cursor: pointer;
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    .title-container {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      .title-container__title{
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .title-container__subtitle {
+        font-size: 15px;
+        color: gray;
+      }
+    }
+    .avatar-container {
+      width: 40px;
+      height: 40px;
+      border: 1px solid gray;
+      border-radius: 100%;
+      padding: 5px;
+      margin: 5px;
+      margin-right: 20px;
+      .avatar-container_image {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        .contact-avatar {
+        }
+        .default-avatar {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
