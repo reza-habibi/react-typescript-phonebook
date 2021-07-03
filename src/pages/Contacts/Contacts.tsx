@@ -91,6 +91,7 @@ function Contacts(props: any) {
           </Row>
         </Container>
       </section>
+      
       <ContactAddModal
         show={show}
         handleClose={handleClose}

@@ -3,5 +3,5 @@ import Footer from './Footer/Footer'
 import SearchBar from './SearchBar/SearchBar'
 import ContactAddModal from './ContactAddModal/ContactAddModal'
 import  IContact  from './ContactAddModal/ContactAddModal'
-
-export { ContactItem, Footer ,SearchBar,ContactAddModal , IContact}
+import CustomButton from './CustomButton/CustomButton'
+export { ContactItem, Footer ,SearchBar,ContactAddModal , IContact , CustomButton}

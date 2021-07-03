@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./ContactSingle.style.scss";
 import { contacts } from "../Contacts/Contacts";
 import CustomButton from "../../components/CustomButton/CustomButton";
+import { useLocation } from "react-router-dom";
 
 import {
   FaPhoneAlt,
@@ -14,22 +15,28 @@ import {
   FaBars,
 } from "react-icons/fa";
 
+
+
 const ContactSingle = (props: any) => {
-  console.log(contacts);
+
+
+    const location = useLocation();
+    
+
   const contact = contacts[parseInt(props.match.params.id) - 1];
 
   function handleFavorite() {
-    contact.favorite?contact.favorite=false :contact.favorite=true;
-    console.log(contact)
+    contact.favorite ? (contact.favorite = false) : (contact.favorite = true);
+    console.log(contact);
   }
   return (
-    <div>
+    <div key={1}>
       <Container className="p-5">
         <Row className="w-100">
           <Col className="top" xs={12}>
             <div className="back-btn">
               <CustomButton
-                to={"/contacts"}
+                to={`${location.pathname.substr(0, location.pathname.lastIndexOf("/"))}`}
                 text={"Phone"}
                 icon={<FaArrowLeft size={24} />}
               />
